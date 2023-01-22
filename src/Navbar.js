@@ -9,11 +9,11 @@ import { FaPlus, FaUserCircle } from 'react-icons/fa';
 export default function Navbar() {
 
   return (
-    <div className='border-b'>
-      <div className = 'flex items-center justify-between primary sm: '>
+    <div className='border-b primary'>
+      <div className = 'flex items-center justify-between sm:mx-2 md:mx-4 lg:mx-6'>
           <div className=' h-20 flex'>
             <img src={logoCropped} className='w-40 object-cover hidden sm:block' />
-            <img src={logo} className='w-20 object-cover block sm:hidden' />
+            <img src={logo} className='w-20 object-cover mx-2 block sm:hidden' />
           </div>
           <div 
             className='hidden md:flex justify-center items-center relative shadow-sm shadow-black-400 rounded-full border bg-white'>

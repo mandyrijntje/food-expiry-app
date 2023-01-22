@@ -2,6 +2,7 @@
   --primary: rgb(13,176,138);
   --secondary: rgb(5, 80, 62);
   --dark: rgb(79,76,76);
+  --light: rgb(209, 202, 202); 
   --defaultMargin: calc(1vw + 1vh);
   --centerMargin: calc(2vw + 2vh) auto;
   --defaultPadding: calc(1vw + 1vh);
@@ -42,4 +43,9 @@ div.secondary
 div.dark
 {
   background-color: var(--dark);
+}
+
+div.light
+{
+  background-color: var(--light);
 }
