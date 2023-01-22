@@ -1,6 +1,6 @@
 :root {
   --primary: rgb(13,176,138);
-  --secondary: rgb(39, 99, 77);
+  --secondary: rgb(5, 80, 62);
   --dark: rgb(79,76,76);
   --defaultMargin: calc(1vw + 1vh);
   --centerMargin: calc(2vw + 2vh) auto;
@@ -27,4 +27,19 @@ main {
   width: 100%;
   margin: 0 auto;
 
+}
+
+div.primary
+{
+  background-color: var(--primary);
+}
+
+div.secondary
+{
+  background-color: var(--secondary);
+}
+
+div.dark
+{
+  background-color: var(--dark);
 }
