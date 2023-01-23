@@ -22,7 +22,7 @@ export default function FilterBar() {
     ]
   
   return (
-      <div className='flex justify-start gap-3 mt-2 border-b h-14'>
+      <div className='flex justify-start gap-3 mt-2 border-b h-14 px-2 sm:px-5'>
         {sorting.map(item => (<Filter title={item.title} icon={item.icon}/>))}
       </div>
   )

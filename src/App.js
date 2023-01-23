@@ -14,8 +14,8 @@ function App() {
     <main>
       <Navbar />
       <Banner />
+      <FilterBar />
       <div className='px-3 mx-2 md:mx-4 lg:mx-6'>
-        <FilterBar />
         <FoodList />
         <ReviewList />
         <PostList />
