@@ -1,14 +1,14 @@
 import React from 'react';
 import FoodItem from './FoodItem';
-import watermelon from './assets/foodList/watermelon';
-import apple from './assets/foodList/apple';
-import orange from './assets/foodList/orange';
-import pear from './assets/foodList/pear';
-import avocado from './assets/foodList/avocado';
-import coconut from './assets/foodList/coconut';
-import banana from './assets/foodList/banana';
-import peach from './assets/foodList/peach';
-import melon from './assets/foodList/melon';
+import watermelon from './assets/foodList/watermelon.jpg';
+import apple from './assets/foodList/apple.jpg';
+import orange from './assets/foodList/orange.jpg';
+import pear from './assets/foodList/pear.jpg';
+import avocado from './assets/foodList/avocado.jpg';
+import coconut from './assets/foodList/coconut.jpg';
+import banana from './assets/foodList/banana.jpg';
+import peach from './assets/foodList/peach.jpg';
+import melon from './assets/foodList/melon.jpg';
 
 export default function FoodList() {
 

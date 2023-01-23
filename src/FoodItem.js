@@ -10,7 +10,7 @@ export default function FoodItem({ title, rating, description, image, purchaseda
             <div 
                 className='absolute gradient h-full w-full rounded-[1.3rem]'>
             </div>
-            <img src={image} alt={title} className='object-cover h-96 w-120 object-center'/>
+            <img src={image} alt={title} className='object-cover h-96 object-center'/>
             <div 
                 className=' absolute w-full bottom-5 px-4 text-white font-bold text-[20px] columns-1 sm:columns-1 md:columns-1 lg:columns-1 xl:columns-2'>
                     <div className=''>
