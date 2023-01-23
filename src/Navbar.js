@@ -12,8 +12,8 @@ export default function Navbar() {
     <div className='sticky top-0 z-50 primary shadow-lg shadow-black-200'>
       <div className = 'flex items-center justify-between sm:mx-2 md:mx-4 lg:mx-6'>
           <div className=' h-20 flex'>
-            <img alt='img' src={logoCropped} className='w-40 object-cover hidden sm:block' />
-            <img alt='img' src={logo} className='w-20 object-cover mx-2 block sm:hidden' />
+            <img alt='img' src={logoCropped} className='w-40 object-cover hidden sm:block md:hidden lg:block' />
+            <img alt='img' src={logo} className='w-20 object-cover mx-2 block sm:hidden md:block lg:hidden' />
           </div>
           <div 
             className='hidden md:flex justify-center items-center relative shadow-sm shadow-black-400 rounded-full border bg-white'>
