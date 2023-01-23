@@ -34,9 +34,9 @@ export default function FoodList() {
 
   return (
     <div className='foodlist pt-3'>
-      <div className='grid grid-cols-1 gap-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
         {foodItems.map((item) => {
-          const descriptionShort = item.description.substring(0,60)+'...';
+          const descriptionShort = item.description.substring(0,50)+'...';
           console.log(descriptionShort);
           return (
           <FoodItem title={item.title} image={item.image} purchasedate = {item.purchaseDate} expirydate = {item.expiryDate} rating={item.rating} description={descriptionShort}/>)})}

@@ -6,23 +6,23 @@ export default function FoodItem({ title, rating, description, image, purchaseda
 
   return (
     <div className=''>
-        <div className='relative'>
+        <div className='relative h-56 overflow-hidden rounded-[1.3rem]'>
             <div 
                 className='absolute gradient h-full w-full rounded-[1.3rem]'>
             </div>
-            <img src={image} alt={title} className='object-cover rounded-[1.3rem]'/>
+            <img src={image} alt={title} className='object-cover h-96 w-120 object-center'/>
             <div 
-                className='absolute w-full bottom-8 px-4 text-white font-bold text-[20px] columns-1 sm:columns-2'>
+                className=' absolute w-full bottom-5 px-4 text-white font-bold text-[20px] columns-1 sm:columns-1 md:columns-1 lg:columns-1 xl:columns-2'>
                     <div className=''>
                         {title}
-                        <div className= 'text-[16px] text-gray-200 font-normal'>
+                        <div className= 'text-[14px] text-gray-200 font-normal'>
                         
                             {description}
                         
                         </div>
                     </div>
 
-                    <div className='text-right text-[16px] text-gray-200 font-normal'>
+                    <div className='text-right text-[14px] text-gray-200 font-normal'>
                         <p className='mt-2'>
                             <span className='flex justify-end  my-2'>
                                 {[...Array((5-rating))].map((e, j) => <FaBacterium key={j} className='text-red-200'/>)}
