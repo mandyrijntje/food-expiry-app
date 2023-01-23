@@ -6,7 +6,8 @@ import { FaAppleAlt, FaBreadSlice, FaFish } from 'react-icons/fa';
 
 import { GiGarlic, GiRoastChicken } from 'react-icons/gi';
 
-export default function FilterBar() {
+export default function FilterBar(props) {
+
 
   const sorting = [
       {title: "Fruits", icon: <FaAppleAlt />},
@@ -22,8 +23,8 @@ export default function FilterBar() {
     ]
   
   return (
-      <div className='flex justify-start gap-3 mt-2 border-b h-14 px-2 sm:px-5'>
-        {sorting.map(item => (<Filter title={item.title} icon={item.icon}/>))}
+      <div className={'flex justify-start gap-3 mt-2 border-b h-14 px-2 sm:px-5'}{...props}>
+        {sorting.map((item, key) => (<Filter title={item.title} icon={item.icon} passcategory={props.passcategory} key={key}/>))}
       </div>
   )
 }
