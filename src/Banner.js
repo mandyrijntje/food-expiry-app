@@ -4,7 +4,7 @@ import banner from './assets/foodList/banner';
 export default function Banner() {
   return (
     <div>
-      <img src={banner} className='w-full banner' />
+      <img src={banner} className='w-full banner' alt="banner" />
     </div>
   )
 }
