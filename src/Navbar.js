@@ -27,13 +27,13 @@ export default function Navbar() {
               <button className='border-l border-x px-6'>Date</button>
               <button className='w-full pl-2 '>Category</button>
             </div>
-            <div className='secondary p-2 rounded-full mr-2 shadow-sm shadow-black-900 '>
+            <div className='secondary p-2 z-50 rounded-full mr-2 shadow-sm shadow-black-900 transition hover:bg-[#0db08a] hover:shadow-sm hover:shadow-black-200 delay-100 ease-in-out'>
                 <FiSearch className='text-white'/>
             </div>
           </div>
 
           <div className='flex items-center pr-5 font-semibold text-white'>
-            <div className= 'rounded-full p-2 flex items-center mx-2 transition hover:bg-[#009999] hover:shadow-sm hover:shadow-black-900 delay-100 ease-in-out'>
+            <div className= 'rounded-full p-2 flex items-center mx-2 transition hover:bg-[#33cc99] hover:shadow-sm hover:shadow-black-900 delay-100 ease-in-out'>
               {/* <FiMenu className='mr-4'/> */}
 
               <FaPlus className=''/>
