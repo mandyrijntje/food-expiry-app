@@ -8,10 +8,10 @@ export default function FilterBar() {
   const sorting = [
       {title: "Apple", icon: <FaAppleAlt />},
       {title: "Banana", icon: <GiBananaPeeled />},
-      {title: "Grape", icon: <GiGrapes />},
-      {title: "Orange", icon: <GiOrangeSlice />},
-      {title: "Tomato", icon: <GiTomato />},
-      {title: "Potato", icon: <GiPotato />},
+      // {title: "Grape", icon: <GiGrapes />},
+      // {title: "Orange", icon: <GiOrangeSlice />},
+      // {title: "Tomato", icon: <GiTomato />},
+      // {title: "Potato", icon: <GiPotato />},
       {title: "Chicken", icon: <GiRoastChicken />},
       {title: "Fish", icon: <FaFish />},
       {title: "Beef", icon: <GiMeat />},
@@ -19,7 +19,7 @@ export default function FilterBar() {
     ]
   
   return (
-      <div className='flex justify-start gap-3 mt-2 border-b h-14'>
+      <div className='flex justify-center gap-3 mt-2 border-b h-14'>
         {sorting.map(item => (<Filter title={item.title} icon={item.icon}/>))}
       </div>
   )

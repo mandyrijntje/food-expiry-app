@@ -33,12 +33,12 @@ export default function Navbar() {
           </div>
 
           <div className='flex items-center pr-5 font-semibold text-white'>
-            <div className= 'dark rounded-full p-2 flex items-center shadow-sm shadow-black-900 mx-2 transition hover:bg-[#006666] delay-100 ease-in-out'>
+            <div className= 'rounded-full p-2 flex items-center mx-2 transition hover:bg-[#009999] hover:shadow-sm hover:shadow-black-900 delay-100 ease-in-out'>
               {/* <FiMenu className='mr-4'/> */}
 
               <FaPlus className=''/>
               <p className='hidden sm:flex ml-0 sm:ml-1'>
-                Add
+                New
               </p>
             </div>
             <div className='flex items-center mx-2'>
@@ -47,11 +47,11 @@ export default function Navbar() {
                 EN
               </p>
             </div>
-            <div className= 'secondary rounded-full p-2 flex items-center shadow-sm shadow-black-900 mx-2 transition hover:bg-[#006666] delay-100 ease-in-out'>
+            <div className= 'secondary w-8 md:w-24 rounded-full p-2 flex items-center shadow-sm shadow-black-900 mx-2 transition hover:bg-[#006666] delay-100 ease-in-out'>
               {/* <FiMenu className='mr-4'/> */}
 
               <FaUserCircle className=''/>
-              <p className='hidden sm:flex ml-0 sm:ml-1'>
+              <p className='hidden md:flex ml-0 md:ml-1'>
                 Sign in
               </p>
             </div>
