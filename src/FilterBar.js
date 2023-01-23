@@ -19,10 +19,8 @@ export default function FilterBar() {
     ]
   
   return (
-    <div className='h-14 mx-2 md:mx-4 lg:mx-6 border-b'>
-      <div className='flex justify-start gap-4 mt-2'>
+      <div className='flex justify-start gap-3 mt-2 border-b h-14'>
         {sorting.map(item => (<Filter title={item.title} icon={item.icon}/>))}
       </div>
-    </div>
   )
 }
