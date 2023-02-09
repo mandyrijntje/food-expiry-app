@@ -1,15 +1,27 @@
-import React from 'react';
+import React, {FC} from 'react';
 import { FaLeaf, FaBacterium, FaTrashAlt, FaShoppingCart } from 'react-icons/fa';
 
-export default function FoodItem({ title, rating, description, image, purchasedate, expirydate }) {
+export default function FoodItem ({ 
+    title, 
+    rating, 
+    description, 
+    image, 
+    purchasedate, 
+    expirydate }) {
+
+    const onClickPopup = (a) =>{
+        alert(a);
+    };
 
 
   return (
     <div className=''>
-        <div className='relative h-56 overflow-hidden rounded-[1.3rem]'>
-            <div 
+        <div 
+            className='relative h-56 overflow-hidden rounded-[1.3rem]' 
+            onClick={()=>{onClickPopup(title)}}>
+            <a
                 className='absolute gradient z-30 h-full w-full rounded-[1.3rem]'>
-            </div>
+            </a>
             <img src={image} alt={title} className='object-cover h-96 object-center'/>
             <div 
                 className='z-40 absolute w-full bottom-5 px-4 text-white font-bold text-[20px] columns-1 sm:columns-1 md:columns-1 lg:columns-1 xl:columns-2'>

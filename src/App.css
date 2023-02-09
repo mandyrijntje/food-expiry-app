@@ -54,7 +54,7 @@ div.light
   background-color: var(--light);
 }
 
-div.gradient {
+a.gradient {
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,0.48018648018648014) 44%, rgba(255,255,255,0) 100%);
 }
